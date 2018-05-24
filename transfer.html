@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Welcome to RavBank</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700'>
+   <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js">
+   </script>
+   <script src="js/transfer.js"> </script> 
+</head>
+
+<body>
+
+	<header>
+	<div class="container">
+	<div class="logo">
+		<img src="logoravbank.png" width="200" alt="" title="">
+	</div>
+
+<nav>
+  <a href="profile.php">Profile</a>
+  <a href="history.php">History</a>
+  <a>Transfer</a>
+  <a href="Home.html">Log out</a>
+  <a href="Logincontactus.html">Contact us</a>
+</nav>
+ 	</div>
+	</header>
+
+	<div class="container">
+		<div class="content">
+			<h2>Make a transfer!</h2>
+
+	<h3>From</h3>
+	<form action="transfer.php" method="post">
+	<h4>Choose account type: <label class="error" id="AccountTypePayee_empty">Selection is required.</label></h4>
+	<input type="radio" name="AccountTypePayee" value="Interact"> Interact<br>
+  	<input type="radio" name="AccountTypePayee" value="Visa"> Visa<br>
+	
+	<br><br>
+	<h3>To</h3>
+	<h4>Choose account type: <label class="error" id="AccountTypeReciever_empty">Selection is required.</label></h4>
+	<input type="radio" name="AccountTypeReciever" value="Interact"> Interact<br>
+  	<input type="radio" name="AccountTypeReciever" value="Visa"> Visa<br>
+	Enter UserID of the payee <input type="text" id="recieverID" name="recieverID" value="">
+	<label class="error" id="uid_empty">Selection is required.</label>
+	<br>
+	
+  	Enter the Amount <input type="text" id="Amount" name="Amount" value=""> 
+	<label class="error" id="Amount_empty">Selection is required.</label>
+	<br>
+	<br>
+	<input type="submit" name="submit" class="button" id="submit_btn" value="Make a transfer" />
+	</form>
+	</div>
+
+
+
+		</div>
+	</div>
+</body>
+
+</html>

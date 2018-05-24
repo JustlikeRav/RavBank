@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Welcome to RavBank</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700'>
+   <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js">
+   </script>
+   <script src="js/login.js"> </script> 
+
+</head>
+
+<body>
+	<header>
+	<div class="container">
+	<div class="logo">
+		<img src="logoravbank.png" width="200" alt="" title="">
+	</div>
+
+	<nav>
+	  <a href="Home.html">Home</a>
+	  <a>Login</a>
+      <a href="signup.html">Sign up</a>
+	  <a href="contactus.html">Contact us</a>
+	</nav>
+ 	</div>
+	</header>
+
+<div class="container">
+<div class="content">
+			<h2>Login</h2>
+		</div>
+<form action="signin.php" method="post">
+  UserID:<br>
+  <input type="text" name="uid" id="uid" value="">
+<label class="error" id="uid_empty">This field is required.</label>
+  <br>
+  First Name:<br>
+  <input type="text" name="fname" id="fname" value="">
+<label class="error" id="fname_empty">This field is required.</label>
+  <br>
+  Last Name:<br>
+  <input type="text" name="lname" id="lname" value="">
+<label class="error" id="lname_empty">This field is required.</label>
+  <br>
+
+  password:<br>
+  <input type="password" name="password" id="password" value="">
+<label class="error" id="pass_empty">This field is required.</label>
+<label class="error" id="pass_invalid">Password must contain letters and numbers only and should be 8 characters long </label>
+	
+  <br><br>
+  <input type="submit" name="submit" class="button" id="submit_btn" value="login" />
+
+<br><br>
+
+</div>
+
+</form> 
+</body>
+
+</html>

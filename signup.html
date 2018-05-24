@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Welcome to RavBank</title>
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700'>
+   <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js">
+   </script>
+   <script src="js/signup.js"> </script> 
+
+</head>
+
+<body>
+	<header>
+	<div class="container">
+	<div class="logo">
+		<img src="logoravbank.png" width="200" alt="" title="">
+	</div>
+
+	<nav>
+  <a href="Home.html">Home</a>
+  <a href="login.html">Login</a>
+  <a>Sign up</a>
+  <a href="contactus.html">Contact us</a>
+	</nav>
+ 	</div>
+	</header>
+
+<div class="container">
+<div class="content">
+			<h2>Make an account</h2>
+		</div>
+<form action="signup.php" method="post">
+  First Name:<br>
+  <input type="text" name="fname" id="fname" value="">
+<label class="error" id="firstname_empty">This field is required.</label>
+<label class="error" id="firstname_invalid">First name can not contain numbers</label>
+  <br>
+
+  Last Name:<br>
+  <input type="text" name="lname" id="lname" value="">
+	<label class="error" id="lastname_empty">This field is required.</label>
+	<label class="error" id="lastname_invalid">Last name can not contain numbers</label>
+  <br>
+
+  password:<br>
+  <input type="password" name="password" id="password" value="">
+	<label class="error" id="pass_empty">The password must be at least 8 characters long.</label>
+	<label class="error" id="pass_invalid">Password must contain atleast one letters and one numbers</label>
+<br>
+  Confirm Password:<br>
+  <input type="password" name="cpassword" id="cpassword" value="">
+	<label class="error" id="cpass_match">Password did not match!</label>
+	
+  <br><br>
+  <input type="submit" name="submit" class="button" id="submit_btn" value="login" />
+
+
+</div>
+
+</form> 
+</body>
+
+</html>
